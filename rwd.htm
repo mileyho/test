@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>司法院 Judicial Yuan</title>	
+	<style>
+		*,html{
+			margin: 0;
+			padding: 0;
+			list-style:none;
+			position:relative;
+			font-family:Arial !important;	
+		}
+		
+		.wrap{
+			width: 1000px;
+			margin: 0 auto;
+			position: relative;	
+		}
+
+
+		.section{
+			width: 1000px;
+			height:800px;
+			position: relative;	
+		}
+
+		
+		.mobile{
+			width: 415px;
+			height: 800px;								
+			z-index:9999;
+			background:url(images/phone.png) no-repeat 0 0;
+			margin: 0px 300px;
+			position: absolute;
+			overflow:hidden;
+		}
+
+		.phone{
+			width: 274px;
+			height: 490px;
+			position: absolute;
+			top: 120px;
+			left: 70px;
+			background:#0f283c;
+			z-index:1;
+			overflow-x:hidden;
+		}
+		.click01{
+			position: absolute;
+			top: 120px;
+			left: 70px;
+			z-index:9999;
+		}
+
+		.r01{
+			position: absolute;
+			top: 0px;
+			left: -370px;
+			z-index:9995;
+		}
+
+		.r02{
+			position: absolute;
+			top: 51px;
+			left: 0;
+			z-index:9995;
+			display:none;
+		}
+		.rlive{
+			position: absolute;
+			top: 0;
+			left:220px;
+			z-index:9994;
+		}
+		.close{
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			z-index:9995;
+		}
+		.click03{
+			position: absolute;
+			top: 170px;
+			left: 70px;
+			z-index:9999;
+		}
+
+		.click04{
+			position: absolute;
+			top: 170px;
+			left: 70px;
+			z-index:9999;
+			display:none;
+		}
+
+
+	</style>
+	<!-- WOW動畫-->
+	<link rel="stylesheet" href="css/libs/animate.css">
+	<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+	<div class="wrap">
+
+		<div class="section">
+			<div class="mobile">
+				<div class="phone">
+					<div class="rlive"><img src="images/rlive.gif" alt=""></div>
+					<div class="r02"><img src="images/r02.png" alt=""></div>
+					<div class="r01"><a href="#" class="close" ></a><img src="images/r01.png" alt=""></div>
+					<img src="images/phone01.jpg" alt=""></div>
+					<div class="click01" ><a href="#" class="open"><img src="images/trans.png" width="42" height="51" sr /></a></div>
+					<div class="click03" ><a href="#" class="open"><img src="images/trans.png" width="92" height="34" sr /></a></div>
+					<div class="click04" ><a href="#" class="open"><img src="images/trans.png" width="92" height="34" sr /></a></div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- JQ 擺第一 -->
+		<script src="JS/jquery-1.11.2.js"></script>
+
+		<script>
+
+		//頁籤012//
+		$('.click01 a.open').click(function () {
+			$('.r01').animate({
+				"left": 0,},400);
+			return false;
+		});
+		$('a.close').click(function () {
+			$('.r01').animate({
+				"left": "-370px",},400);
+			return false;
+		});
+		//頁籤034//
+		$('.click03 a.open').click(function () {
+			$('.r02').slideDown(600);
+			$('.click04').slideDown(600);
+			return false;
+		});
+		$('.click04 a.open').click(function () {
+			$('.r02').slideUp(600);
+			$('.click04').fadeOut(600);
+			return false;
+		});
+
+
+
+
+	</script>
+	<!-- WOW動畫 -->
+	<script src="dist/wow.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+</body>
+</html>

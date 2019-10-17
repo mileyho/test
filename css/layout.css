@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body,html{
+	font-family: '微軟正黑體';
+	background:url(../images/bg.jpg) #222;
+}
+
+@-webkit-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
+
+.wrap{
+	width: 1010px!important;
+	margin: 0 auto;
+	position: relative;
+	overflow:hidden; 
+}
+.public{
+	position: fixed;
+	z-index:1;
+	width: 62px;
+	height: 459px;
+	bottom: calc(100%/2 - 250px);
+	bottom: 0;
+	right: 0px;
+}
+.section01{
+	height: 1300px;
+	padding-top: 0px;
+	position: relative;	
+	width:1010px;
+	margin-top:0px;
+	background:#fff;
+	overflow:hidden;
+}
+
+/*-------a----------*/
+.section01 .a1{
+	position: absolute;
+	top: 592px;
+	left: 0;
+	z-index:9996;
+}
+.section01 .np{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:1;
+}
+.section01 .a01{
+	position: absolute;
+	top: 632px;
+	left: 0;
+	z-index:9997;
+}
+.section01 .a02{
+	position: absolute;
+	top: 632px;
+	left: 348px;
+	z-index:9997;
+}
+.section01 .a03{
+	position: absolute;
+	top: 632px;
+	left: 661px;
+	z-index:9997;
+}
+.section01 .a04{
+	position: absolute;
+	top: 925px;
+	left: 348px;
+	z-index:9997;
+}
+.section01 .ind05{
+	position: absolute;
+	top: 80px;
+	left: 519px;
+	z-index:10002;
+	display:none;
+}
+.section01 .click11{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	z-index:10001;
+}
+/*-------b----------*/
+.section02{
+	height: 549px;
+	position: relative;	
+	background:url(../images/bbg.png) no-repeat;
+}
+.section02 .b01{
+	position: absolute;
+	top: 0;
+	left: 420px;
+	z-index:9996;
+}
+.section02 .b02{
+	position: absolute;
+	top: 226px;
+	left: 0;
+	z-index:9996;
+}
+.section02 .b03{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index:9996;
+}
+/*--一組pop up--*/
+
+.section02 .clickb03{
+	position: absolute;
+	top: 0px;
+	left:400px;
+	z-index:9999;
+}
+.section02 .clickb04{
+	position: absolute;
+	top: 0;
+	left:400px;
+	z-index:10000;
+	display:none;
+}
+/*-一組pop up--*/
+
+/*-------c----------*/
+.section03{
+	height: 644px;
+	position: relative;	
+	background:url(../images/cbg.jpg) no-repeat;
+}
+.section03 .c01{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.section03 .c02{
+	position: absolute;
+	top: 0;
+	left: 322px;
+}
+/*--一組pop up--*/
+.section03 .btn_imgc{
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 9900;
+	display:none;
+}
+.section03 .clickc03{
+	position: absolute;
+	top: 321px;
+	left:0;
+	z-index:9999;
+}
+.section03 .clickc04{
+	position: absolute;
+	top: 153px;
+	left:0;
+	z-index:9999;
+}
+.section03 .btn_imgc2{
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 9900;
+	display:none;
+}
+/*-一組pop up--*/
+
+/*-------d----------*/
+.section04{
+	height: 1899px;
+	position: relative;	
+	background-image:url(../images/dbg.jpg);
+}
+.section04 .d01{
+	position: absolute;
+	top: 158px;
+	left: 200px;
+}
+.section04 .d02{
+	position: absolute;
+	top: 158px;
+	left: 410px;
+}
+.section04 .d03{
+	position: absolute;
+	top: 158px;
+	left: 619px;
+}
+.section04 .d04{
+	position: absolute;
+	top: 704px;
+	left: 87px;
+}
+.section04 .d05{
+	position: absolute;
+	top: 1251px;
+	left: 0;
+}
+.section04 .d06{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.section04 .good{
+	position: absolute;
+	bottom: -3px;
+	right: 220px;
+}
+
+.Slider_banner{
+	width: 1010px;
+	height: 454px;	
+	z-index: 0;
+	position:absolute;
+	top:157px;
+}
+
+
+.Slider_dog{
+	width: 252px;
+	height: 180px;	
+	z-index: 0;
+	position:absolute;
+	top:1343px;
+	left:410px;	
+}
+
+.Slider_dog .slick-dots li{
+	display:none;	
+}	
+
+
+/*---------一組pop up-------*/
+.section01 .btn_img1{
+	position: absolute;
+	top: 115px;
+	right: 0;
+	z-index: 9996;
+	display:none;
+}
+.section01 .click01{
+	position: absolute;
+	top: 117px;
+	left:0px;
+	z-index:9996;
+}
+.section01 .click02{
+	position: absolute;
+	top: 117px;
+	left: 0;
+	z-index:9997;
+	display:none;
+}
+/*---------一組pop up-------*/
+
+/*---------一組pop up-------*/
+.section01 .btn_img2{
+	position: absolute;
+	top: 0px;
+	right: 0;
+	z-index: 9999;
+	display:none;
+}
+.section01 .click03{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	z-index:9999;
+}
+.section01 .click04{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index:10000;
+	display:none;
+}
+/*---------一組pop up-------*/
+.section01 .btn_img3{
+	position: absolute;
+	top: 115px;
+	right: 0;
+	z-index: 9994;
+	display:none;
+}
+.section01 .click05{
+	position: absolute;
+	top: 115px;
+	left:663px;
+	z-index:9994;
+}
+.section01 .click06{
+	position: absolute;
+	top: 115px;
+	left:663px;
+	z-index:9995;
+	display:none;
+}
+/*---------一組pop up-------*/
+.section01 .btn_img4{
+	position: absolute;
+	top: 115px;
+	right: 0;
+	z-index: 9992;
+	display:none;
+}
+.section01 .click07{
+	position: absolute;
+	top: 115px;
+	left:780px;
+	z-index:9992;
+}
+.section01 .click08{
+	position: absolute;
+	top: 115px;
+	left:780px;
+	z-index:9993;
+	display:none;
+}
+/*---------一組pop up-------*/
+.section01 .btn_img5{
+	position: absolute;
+	top: 115px;
+	right: 0;
+	z-index: 9990;
+	display:none;
+}
+.section01 .click09{
+	position: absolute;
+	top: 115px;
+	left:895px;
+	z-index:9990;
+}
+.section01 .click10{
+	position: absolute;
+	top: 115px;
+	left:895px;
+	z-index:9991;
+	display:none;
+}
+/*---------一組pop up-------*/
+.section01 .link{
+	position:fixed;
+	bottom: calc(100%/2 - 200px);	
+	left:0px;
+	width:72px;
+	z-index:1;
+}
+
+/*---------header 固定在上方 -------*/
+
+#header{
+	opacity: 1;
+	z-index: 9999;
+}
+.header_header{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	width:1010px;
+	height: 176px;
+	z-index:2001;
+}
+.header_bar {
+	position: fixed;
+	height: 60px;
+	top: -59px;/*----header_bar隱藏位置---*/
+	left: 0px;
+	width: 100%;		
+	text-align: center;
+	
+}
+.section02 .bb{
+	position: absolute;
+	top: 0;
+	left:420px;
+	z-index: 2002;
+	width: 36px;
+	height: 43px;
+	background-image:url(../images/bb.gif);
+	-webkit-transition: width .3s; /* For Safari 3.1 to 6.0 */
+	transition: width .3s;
+}
+.section02 .bb:hover{
+	width: 196px;
+}
+/* ------------------------- slick slider */
+/* 圖片寬高設定 */
+.single .Pic{}
+.autoplay .Pic {}
+
+/* 自訂左右按鍵樣式 */
+.Slider .slick-prev,
+.Slider .slick-next{
+	width: 100px;
+	height: 63px;
+	top: 200px;
+}
+.Slider .slick-prev,
+.Slider .slick-prev:hover,
+.Slider .slick-prev:focus{ background: url('../images/left.png'); }
+.Slider .slick-next,
+.Slider .slick-next:hover,
+.Slider .slick-next:focus{ background: url('../images/right.png'); }
+
+/* 隱藏左右按鈕預設圖片 */
+.Slider .slick-prev:before,
+.Slider .slick-next:before,
+.Slider .slick-prev:hover:before,
+.Slider .slick-prev:focus:before,
+.Slider .slick-next:hover:before,
+.Slider .slick-next:focus:before{ opacity: 0; }
+
+.Slider .slick-prev.slick-disabled:before,
+.Slider .slick-next.slick-disabled:before{ opacity: 0; }
+
+.Slider .slick-prev.slick-disabled:before,
+.Slider .slick-next.slick-disabled:before{ opacity: 0; }
+
+/* 圓點位置 */
+.Slider .slick-dots { bottom: 43px; }
+.singleplay .Pic{position: relative;}
